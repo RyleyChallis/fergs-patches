@@ -19,7 +19,7 @@ nav {
     .nav-links {
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: 48px;
         list-style: none;
 
         a {
