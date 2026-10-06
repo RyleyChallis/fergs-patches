@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/button.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/query.css">
 </head>
 <body>
 	<header>
@@ -20,11 +21,11 @@
 
 			<nav class="sidebar-nav">
 			<ul class="sidebar-links">
-				<li><a href="#hero">// 01. HOME</a></li>
-				<li><a href="#products">// 02. FEATURED STORE</a></li>
-				<li><a href="#process">// 03. HOW IT WORKS</a></li>
-				<li><a href="#reviews">// 04. REVIEWS</a></li>
-				<li><a href="#intake">// 05. CUSTOM QUOTE</a></li>
+				<li><a href="#hero">01. HOME</a></li>
+				<li><a href="#products">02. FEATURED STORE</a></li>
+				<li><a href="#process">03. HOW IT WORKS</a></li>
+				<li><a href="#reviews">04. REVIEWS</a></li>
+				<li><a href="#intake">05. CUSTOM QUOTE</a></li>
 			</ul>
 			</nav>
 
@@ -40,7 +41,13 @@
 				<li><a href="#products">Featured</a></li>
 				<li><a href="#process">Process</a></li>
 				<li><a href="#intake">Custom Quote</a></li>
-				<li><button id="openbtn" type="button">&#9776;</button></li>
+				<li>
+					<button class="hamburger-btn" aria-label="Toggle Menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+				</li>
 			</ul>
 		</nav>
   	</header>
@@ -74,7 +81,7 @@
       </div>
 
       <div class="products-grid">
-        <article class="product-card">
+        <a class="product-card" href="">
           <div class="card-image">
             <img src="assets/patch1.jpg" alt="Quick Climb Friday RAF Lakenheath Patch">
           </div>
@@ -86,9 +93,9 @@
               <strong>£8.50</strong>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="product-card">
+        <a class="product-card" href="">
           <div class="card-image">
             <img src="assets/patch2.webp" alt="RAF Fairford Flightline ID Patch">
           </div>
@@ -100,9 +107,9 @@
               <strong>£10.00</strong>
             </div>
           </div>
-        </article>
+        </a>
 
-        <article class="product-card">
+        <a class="product-card" href="">
           <div class="card-image">
             <img src="assets/patch3.webp" alt="Blackjack RAF Typhoon Display Team Patch">
           </div>
@@ -114,7 +121,7 @@
               <strong>£10.00</strong>
             </div>
           </div>
-        </article>
+        </a>
       </div>
 
       <button class="btn-secondary">Shop All Patches</button>
@@ -195,6 +202,7 @@
 			<input type="email" placeholder="EMAIL ADDRESS (name@unit.com)" class="form-input">
 			<div class="form-upload">
 				<span>📁 Drag & drop artwork here, or click to browse</span>
+				<input type="file" id="artwork-file" accept="image/*,.pdf,.svg,.ai" />
 			</div>
 			<textarea placeholder="PROJECT NOTES & SPECIFICATIONS (Pantone colors, backing type, deadlines...)" class="form-textarea"></textarea>
 			<div class="form-submit">
