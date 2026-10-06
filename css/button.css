@@ -10,7 +10,7 @@
 	color: var(--text-light);
 
 	font-family: var(--ff-heading);
-	font-size: var(--fs-btn);
+	font-size: var(--fs-p);
 	font-weight: 700;
 
 	text-transform: uppercase;
@@ -28,7 +28,7 @@
 	color: var(--text-dark);
 
 	font-family: var(--ff-heading);
-	font-size: var(--fs-btn);
+	font-size: var(--fs-p);
 	font-weight: 700;
 
 	text-transform: uppercase;

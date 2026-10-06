@@ -28,40 +28,37 @@ nav {
             text-decoration: none;
         }
 
-        /* Custom Industrial Hamburger Button */
-.hamburger-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  width: 42px;
-  height: 42px;
-  padding: 0;
-  background-color: var(--bg-card, #fff);
-  border: 1px solid var(--border-color, #000);
-  cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
-}
+        .hamburger-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            width: 42px;
+            height: 42px;
+            padding: 0;
+            background-color: var(--bg-card, #fff);
+            border: 1px solid var(--border-color, #000);
+            cursor: pointer;
+            transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
 
-/* Custom Menu Bars */
-.hamburger-btn .bar {
-  width: 18px;
-  height: 2px;
-  background-color: var(--text-dark, #000);
-  display: block;
-  transition: background-color 0.15s ease;
-}
+        .hamburger-btn .bar {
+            width: 18px;
+            height: 2px;
+            background-color: var(--text-dark, #000);
+            display: block;
+            transition: background-color 0.15s ease;
+        }
 
-/* Hover & Active States */
-.hamburger-btn:hover {
-  background-color: var(--text-dark, #000);
-  border-color: var(--text-dark, #000);
-}
+        .hamburger-btn:hover {
+            background-color: var(--text-dark, #000);
+            border-color: var(--text-dark, #000);
+        }
 
-.hamburger-btn:hover .bar {
-  background-color: #fff;
-}
+        .hamburger-btn:hover .bar {
+            background-color: #fff;
+        }
     }
 }
 
@@ -70,7 +67,7 @@ nav {
     top: 0;
     right: 0;
     transform: translateX(100%);
-    height: 100vh;
+    max-height: 100vh;
     background-color: var(--bg-card);
     border-left: 1px solid var(--border-color);
     box-shadow: -4px 0px 0px var(--border-color);
@@ -86,7 +83,6 @@ nav {
   transform: translateX(0);
 }
 
-/* Overlay Background */
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -105,7 +101,6 @@ nav {
   pointer-events: auto;
 }
 
-/* Sidebar Header & Close Button */
 .sidebar-header {
   display: flex;
   justify-content: space-between;
@@ -125,7 +120,6 @@ nav {
   font-weight: 700;
 }
 
-/* Sidebar Links */
 .sidebar-links {
   list-style: none;
   display: flex;
