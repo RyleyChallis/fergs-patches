@@ -26,6 +26,11 @@ nav {
             font-size: var(--fs-p);
             color: var(--text-dark);
             text-decoration: none;
+            transition: color 0.1s ease;
+
+            &:hover {
+                color: var(--accent-olive);
+            }
         }
 
         .hamburger-btn {
