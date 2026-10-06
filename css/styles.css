@@ -123,6 +123,7 @@ p {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    scroll-margin-top: 20px;
 
     .products-header {
         text-align: center;
@@ -258,6 +259,7 @@ p {
     border: 1px solid var(--border-color);
     box-shadow: 4px 4px 0px var(--accent-olive);
     padding: 3rem 2.5rem;
+    scroll-margin-top: 90px;
 
     display: flex;
     flex-direction: column;
@@ -311,6 +313,7 @@ p {
     border: 1px solid var(--border-color);
     box-shadow: 4px 4px 0px var(--border-color);
     padding: 2.5rem;
+    scroll-margin-top: 60px;
 
     .intake-header {
         margin-bottom: 1.5rem;
