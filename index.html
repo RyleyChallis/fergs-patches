@@ -253,6 +253,13 @@
 		</div>
 	</footer>
 
+	<script>
+		// Automatically clean Facebook/Instagram tracking params from the URL bar
+if (window.location.search.includes('fbclid=')) {
+  const cleanUrl = window.location.href.replace(/([?&])fbclid=[^&]+(&|$)/, '$1').replace(/\?$/, '');
+  window.history.replaceState(null, '', cleanUrl);
+}
+	</script>
 <script src="data/script.js"></script>
 </body>
 </html>
