@@ -29,7 +29,7 @@ body {
     --fs-h2: clamp(2.1rem, 2vw, 2.25rem);
     --fs-h3: clamp(1.4rem, 2vw, 1.5rem);
     --fs-h4: clamp(1.1rem, 2vw, 1.3rem);
-    --fs-p: clamp(0.9rem, 2vw, 1rem);
+    --fs-p: clamp(0.9rem, 2.5vw, 1rem);
     --ff-heading: 'Space Grotesk', sans-serif;
     --ff-body: 'Inter', sans-serif;
 }
