@@ -83,3 +83,18 @@ form.addEventListener('submit', async (e) => {
     console.error('Submission error:', error);
   }
 });
+
+const fileInput = document.getElementById('artwork-input');
+const fileLabelText = document.getElementById('file-label-text');
+
+fileInput.addEventListener('change', (e) => {
+  if (e.target.files.length > 0) {
+    fileLabelText.textContent = `Selected: ${e.target.files[0].name}`;
+    fileLabelText.style.color = '#000';
+    fileLabelText.style.fontWeight = '600';
+  } else {
+    fileLabelText.textContent = 'Drag & drop or click to browse';
+    fileLabelText.style.color = '#6c757d';
+    fileLabelText.style.fontWeight = 'normal';
+  }
+});

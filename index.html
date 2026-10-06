@@ -201,8 +201,31 @@
 			</select>
 			<input type="email" placeholder="EMAIL ADDRESS (name@unit.com)" class="form-input">
 			<div class="form-upload">
-				<span>📁 Drag & drop artwork here, or click to browse</span>
-				<input type="file" id="artwork-file" accept="image/*,.pdf,.svg,.ai" />
+				<label class="file-upload-zone" for="artwork-input">
+  <div class="upload-content" id="upload-content">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="17 8 12 3 7 8"></polyline>
+      <line x1="12" y1="3" x2="12" y2="15"></line>
+    </svg>
+    <div class="upload-text">
+      <span class="upload-title">ATTACH ARTWORK / SKETCH</span>
+      <span class="upload-subtitle" id="file-label-text">Drag & drop artwork here, or click to browse</span>
+    </div>
+  </div>
+
+  <!-- Preview Container (Hidden by default) -->
+  <div class="file-preview-container" id="file-preview" style="display: none;">
+    <img id="preview-img" src="" alt="Artwork Preview" />
+    <div class="preview-details">
+      <span id="preview-name" class="preview-filename">filename.png</span>
+      <span id="preview-size" class="preview-filesize">2.4 MB</span>
+    </div>
+    <button type="button" id="remove-file-btn" class="remove-btn" title="Remove file">&times;</button>
+  </div>
+  
+  <input type="file" id="artwork-input" name="artwork" accept="image/*,.pdf,.svg,.ai" />
+</label>
 			</div>
 			<textarea placeholder="PROJECT NOTES & SPECIFICATIONS (Pantone colors, backing type, deadlines...)" class="form-textarea"></textarea>
 			<div class="form-submit">

@@ -21,6 +21,10 @@
     display: flex;
     flex-direction: column;
   }
+  .intake-form input, .intake-form select, .intake-form, .form-upload {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
 
   .products-grid .product-card, .review-card, .process-step {
     grid-column: 1 / -1;
@@ -36,10 +40,6 @@
 @media (max-width: 657px) {
     .nav-links a {
         display: none;
-    }
-    .intake-form input, .intake-form select, .intake-form span {
-        grid-column: 1 / -1;
-        width: 100%;
     }
 }
 
